@@ -8,7 +8,7 @@ contract MyToken is ERC20 {
 
     constructor() ERC20("Metacrafttoken", "MTT") {
         owner = msg.sender;
-        _mint(msg.sender, 100 * 10 ** decimals());
+        _mint(msg.sender, 10 * decimals());
     }
 
     modifier onlyOwner() {
